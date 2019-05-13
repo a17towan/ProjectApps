@@ -8,8 +8,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private String[] mountainNames = {"Matterbajs", "Majs", "Bitch"};
+    private String[] mountainLocations = {"Mateee", "Lamp", "Bitcccch"};
+    private int[] mountainHeights = {666, 112, 420};
+
+    private ArrayList<String> ListData = new ArrayList<>(Arrays.asList(mountainNames));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.list_item_textview,R.id.list_item_textview,ListData);
+        ListView my_listview=(ListView) findViewById(R.id.my_listview);
+        my_listview.setAdapter(adapter);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
