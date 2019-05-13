@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Cats z = new Cats("supercat");
+        Cats z2 = new Cats("spacecat", "blue", 1);
+
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, R.layout.list_item_textview,R.id.list_item_textview,ListData);
         ListView my_listview=(ListView) findViewById(R.id.my_listview);
         my_listview.setAdapter(adapter);
