@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class CatsDetailsActivity {
-    public class CatsDetailActivity extends AppCompatActivity {
+    public class CatsDetailsActivity extends AppCompatActivity {
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +23,7 @@ public class CatsDetailsActivity {
 
             TextView test3 = (TextView) findViewById(R.id.test3);
             String size = intent.getStringExtra("SIZE");
-            test3.setText("The size number is is: " + size);
+            test3.setText("The size number is: " + size);
         }
     }
-}
+
