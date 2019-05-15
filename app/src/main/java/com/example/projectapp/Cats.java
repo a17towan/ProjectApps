@@ -35,4 +35,16 @@ public class Cats {
     public void setSize(int newSize){
         size=newSize;
     }
+
+
+    public String getRace(){
+        return race;
+    }
+    public String getColor(){
+        return color;
+    }
+
+    public int getSize(){
+        return size;
+    }
 }
