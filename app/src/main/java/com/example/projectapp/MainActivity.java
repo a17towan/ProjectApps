@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String[] catRace = {"Matterbajs", "Majs", "Bitch"};
     private String[] catColor = {"Mateee", "Lamp", "Bitcccch"};
-    private int[] catSize = {666, 112, 420};
+    private String[] catSize = {"Large", "Medium", "Small"};
 
     private ArrayList<Cats> Cats = new ArrayList<>();
 
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                     Cats.add(new Cats(
                             json1.getJSONObject(i).getString("Race"),
                             json1.getJSONObject(i).getString("Color"),
-                            json1.getJSONObject(i).getInt("Size number")
+                            json1.getJSONObject(i).getString("Size")
                     ));
                 }
             } catch (JSONException e) {

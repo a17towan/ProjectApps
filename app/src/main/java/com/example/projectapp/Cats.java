@@ -5,10 +5,10 @@ public class Cats {
     //gör som dom visar på lenasys, vne om ja behöver det här
     private String race;
     private String color;
-    private int size;
+    private String size;
 
 
-    public Cats(String inRace, String inColor, int inSize){
+    public Cats(String inRace, String inColor, String inSize){
         race=inRace;
         color=inColor;
         size=inSize;
@@ -17,7 +17,7 @@ public class Cats {
     public Cats(String inRace){
         race=inRace;
         color="";
-        size=-1;
+        size="";
     }
 
     public String toString(){return race;}
@@ -27,12 +27,12 @@ public class Cats {
         str+=" is the race.";
         str+=color;
         str+="is the color.";
-        str+=Integer.toString(size);
-        str+="s.";
+        str+=size;
+        str+="is the size";
         return str;
     }
 
-    public void setSize(int newSize){
+    public void setSize(String newSize){
         size=newSize;
     }
 
@@ -44,7 +44,7 @@ public class Cats {
         return color;
     }
 
-    public int getSize(){
+    public String getSize(){
         return size;
     }
 }
