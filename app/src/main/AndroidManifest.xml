@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AboutActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            android:label="About"></activity>
         <activity
             android:name=".CatsDetailsActivity"
             android:parentActivityName=".MainActivity" />
