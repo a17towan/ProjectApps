@@ -90,8 +90,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.682"
-            app:srcCompat="@drawable/cato" />
+            app:layout_constraintVertical_bias="0.682" />
 
 
     </android.support.constraint.ConstraintLayout>
