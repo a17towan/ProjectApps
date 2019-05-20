@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Race", Cats.get(i).getRace() );
                 intent.putExtra("Color", Cats.get(i).getColor());
                 intent.putExtra("Size", Cats.get(i).getSize());
+                intent.putExtra("catImg", Cats.get(i).getCatImg());
 
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), korv+"Race:"+Cats.get(i).getRace()+ "|Color:"+Cats.get(i).getColor()+"|Cat size:"+Cats.get(i).getSize(), Toast.LENGTH_SHORT).show();
@@ -173,7 +174,8 @@ public class MainActivity extends AppCompatActivity {
                     Cats.add(new Cats(
                             json1.getJSONObject(i).getString("Race"),
                             json1.getJSONObject(i).getString("Color"),
-                            json1.getJSONObject(i).getString("Size")
+                            json1.getJSONObject(i).getString("Size"),
+                            json1.getJSONObject(i).getString("catImg")
                     ));
                 }
             } catch (JSONException e) {

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Size;
+import android.widget.ImageView;
 import android.widget.TextView;
 
     public class CatsDetailsActivity extends AppCompatActivity {
@@ -25,6 +26,12 @@ import android.widget.TextView;
             TextView test3 = (TextView) findViewById(R.id.test3);
             String size = intent.getStringExtra("Size");
             test3.setText("Size: " + size);
+
+            ImageView catImg = (ImageView) findViewById(R.id.catImg1);
+            String catImg1 = intent.getStringExtra("catImg");
+
+            int imageresource = getResources().getIdentifier("drawable/"+catImg1, null, this.getPackageName());
+            catImg.setImageResource(imageresource);
         }
     }
 

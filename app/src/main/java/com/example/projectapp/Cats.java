@@ -6,18 +6,21 @@ public class Cats {
     private String race;
     private String color;
     private String size;
+    private String catImg;
 
 
-    public Cats(String inRace, String inColor, String inSize){
+    public Cats(String inRace, String inColor, String inSize, String inImg){
         race=inRace;
         color=inColor;
         size=inSize;
+        catImg=inImg;
     }
 
     public Cats(String inRace){
         race=inRace;
         color="";
         size="";
+        catImg="";
     }
 
     public String toString(){return race;}
@@ -29,6 +32,8 @@ public class Cats {
         str+="is the color.";
         str+=size;
         str+="is the size";
+        str+=catImg;
+        str+="is the image";
         return str;
     }
 
@@ -47,4 +52,7 @@ public class Cats {
     public String getSize(){
         return size;
     }
+    public String getCatImg(){return catImg;}
+
+
 }

@@ -73,8 +73,8 @@
             android:background="?android:attr/listDivider" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
+            android:id="@+id/catImg1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
